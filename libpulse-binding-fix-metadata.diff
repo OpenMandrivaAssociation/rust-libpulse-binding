@@ -1,0 +1,12 @@
+--- libpulse-binding-2.15.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ libpulse-binding-2.15.0/Cargo.toml	2020-01-06T06:02:30.650909+00:00
+@@ -46,9 +46,5 @@
+ pa_v5 = ["libpulse-sys/pa_v5"]
+ pa_v6 = ["pa_v5", "libpulse-sys/pa_v6"]
+ pa_v8 = ["pa_v6", "libpulse-sys/pa_v8"]
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["winsock2"]
+-default-features = false
+ [badges.travis-ci]
+ repository = "jnqnfe/pulse-binding-rust"
